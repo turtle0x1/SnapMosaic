@@ -1,0 +1,438 @@
+body {
+    background-color: #a8a8a8;
+    font-size: .9rem !important;
+}
+
+.btn-purple {
+    background-color: #563d7c;
+    color: white;
+}
+
+.btn-outline-purple {
+    background-color: transparent;
+    border-color: #563d7c;
+    color: #563d7c;
+}
+
+.btn-outline-purple:hover {
+    background-color: #563d7c;
+    color: white;
+}
+
+.btn-purple:hover {
+    color: white;
+}
+
+.ui-timepicker-container{
+    z-index: 999999999 !important;
+}
+
+.cluster-title:hover {
+    color: #167495 !important; /* Eugh */
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-strikethrough {
+    text-decoration: line-through !important;
+}
+
+.toggleCard, .cluster-title {
+    cursor: pointer;
+}
+
+.sidebar .nav-dropdown-toggle.disabled::before {
+    display: none !important;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.token-input-dropdown-facebook {
+    z-index: 999999999 !important;
+}
+
+.filesystemObject {
+    cursor: pointer;
+}
+
+.goUpDirectory {
+    cursor: pointer;
+}
+
+
+/* Core UI overrides  */
+
+.bg-info {
+    background-color: #17a2b8 !important;
+}
+
+.sidebar .nav-dropdown.open .nav-link {
+    color: #fff;
+}
+
+.sidebar .sidebar-nav {
+  position: relative;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 300px;
+}
+.sidebar .nav {
+  width: 300px;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 0;
+}
+
+.sidebar-minimized .sidebar .nav-dropdown-items .nav-item {
+  width: 300px;
+}
+.sidebar-minimized .sidebar .nav-dropdown-items .nav-item .nav-link {
+  width: 300px;
+}
+
+.app-body .sidebar {
+  flex: 0 0 300px;
+  order: -1;
+}
+
+.hideNavText {
+    display: none;
+}
+
+html:not([dir=rtl]) .sidebar {
+  margin-left: -300px;
+}
+
+html[dir=rtl] .sidebar {
+  margin-right: -300px;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .hideNavText {
+        display: inline;
+    }
+}
+
+@media (min-width: 992px) {
+  .sidebar-fixed .sidebar {
+    position: fixed;
+    z-index: 1019;
+    width: 300px;
+    height: 100vh;
+  }
+
+}
+
+@media (min-width: 576px) {
+    html:not([dir=rtl]) .sidebar-sm-show.sidebar-fixed .main,
+  html:not([dir=rtl]) .sidebar-sm-show.sidebar-fixed .app-footer,
+  html:not([dir=rtl]) .sidebar-show.sidebar-fixed .main,
+  html:not([dir=rtl]) .sidebar-show.sidebar-fixed .app-footer {
+      margin-left: 300px;
+    }
+    html:not([dir=rtl]) .sidebar-sm-show.sidebar-fixed.sidebar-minimized .main,
+  html:not([dir=rtl]) .sidebar-sm-show.sidebar-fixed.sidebar-minimized .app-footer,
+  html:not([dir=rtl]) .sidebar-show.sidebar-fixed.sidebar-minimized .main,
+  html:not([dir=rtl]) .sidebar-show.sidebar-fixed.sidebar-minimized .app-footer {
+      margin-left: 300px;
+    }
+    html:not([dir=rtl]) .sidebar-sm-show.breadcrumb-fixed .breadcrumb,
+  html:not([dir=rtl]) .sidebar-show.breadcrumb-fixed .breadcrumb {
+      left: 300px;
+    }
+    html[dir=rtl] .sidebar-sm-show.sidebar-fixed .main,
+  html[dir=rtl] .sidebar-sm-show.sidebar-fixed .app-footer,
+  html[dir=rtl] .sidebar-show.sidebar-fixed .main,
+  html[dir=rtl] .sidebar-show.sidebar-fixed .app-footer {
+      margin-right: 300px;
+    }
+    html[dir=rtl] .sidebar-sm-show.sidebar-fixed.sidebar-minimized .main,
+  html[dir=rtl] .sidebar-sm-show.sidebar-fixed.sidebar-minimized .app-footer,
+  html[dir=rtl] .sidebar-show.sidebar-fixed.sidebar-minimized .main,
+  html[dir=rtl] .sidebar-show.sidebar-fixed.sidebar-minimized .app-footer {
+      margin-right: 300px;
+    }
+    html[dir=rtl] .sidebar-sm-show.breadcrumb-fixed .breadcrumb,
+  html[dir=rtl] .sidebar-show.breadcrumb-fixed .breadcrumb {
+      right: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+  html:not([dir=rtl]) .sidebar-md-show.sidebar-fixed .main,
+html:not([dir=rtl]) .sidebar-md-show.sidebar-fixed .app-footer,
+html:not([dir=rtl]) .sidebar-show.sidebar-fixed .main,
+html:not([dir=rtl]) .sidebar-show.sidebar-fixed .app-footer {
+    margin-left: 300px;
+  }
+ html:not([dir=rtl]) .sidebar-md-show.sidebar-fixed.sidebar-minimized .main,
+html:not([dir=rtl]) .sidebar-md-show.sidebar-fixed.sidebar-minimized .app-footer,
+html:not([dir=rtl]) .sidebar-show.sidebar-fixed.sidebar-minimized .main,
+html:not([dir=rtl]) .sidebar-show.sidebar-fixed.sidebar-minimized .app-footer {
+    margin-left: 300px;
+  }
+  html:not([dir=rtl]) .sidebar-md-show.breadcrumb-fixed .breadcrumb,
+html:not([dir=rtl]) .sidebar-show.breadcrumb-fixed .breadcrumb {
+    left: 300px;
+  }
+  html[dir=rtl] .sidebar-md-show.sidebar-fixed .main,
+html[dir=rtl] .sidebar-md-show.sidebar-fixed .app-footer,
+html[dir=rtl] .sidebar-show.sidebar-fixed .main,
+html[dir=rtl] .sidebar-show.sidebar-fixed .app-footer {
+    margin-right: 300px;
+  }
+  html[dir=rtl] .sidebar-md-show.sidebar-fixed.sidebar-minimized .main,
+html[dir=rtl] .sidebar-md-show.sidebar-fixed.sidebar-minimized .app-footer,
+html[dir=rtl] .sidebar-show.sidebar-fixed.sidebar-minimized .main,
+html[dir=rtl] .sidebar-show.sidebar-fixed.sidebar-minimized .app-footer {
+    margin-right: 300px;
+  }
+  html[dir=rtl] .sidebar-md-show.breadcrumb-fixed .breadcrumb,
+html[dir=rtl] .sidebar-show.breadcrumb-fixed .breadcrumb {
+    right: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed .main,
+html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed .app-footer,
+html:not([dir=rtl]) .sidebar-show.sidebar-fixed .main,
+html:not([dir=rtl]) .sidebar-show.sidebar-fixed .app-footer {
+    margin-left: 300px;
+  }
+  html:not([dir=rtl]) .sidebar-lg-show.breadcrumb-fixed .breadcrumb,
+html:not([dir=rtl]) .sidebar-show.breadcrumb-fixed .breadcrumb {
+    left: 300px;
+  }
+  html[dir=rtl] .sidebar-lg-show.sidebar-fixed .main,
+html[dir=rtl] .sidebar-lg-show.sidebar-fixed .app-footer,
+html[dir=rtl] .sidebar-show.sidebar-fixed .main,
+html[dir=rtl] .sidebar-show.sidebar-fixed .app-footer {
+    margin-right: 300px;
+  }
+  html[dir=rtl] .sidebar-lg-show.breadcrumb-fixed .breadcrumb,
+html[dir=rtl] .sidebar-show.breadcrumb-fixed .breadcrumb {
+    right: 300px;
+  }
+}
+
+@media (min-width: 1300px) {
+  html:not([dir=rtl]) .sidebar-xl-show.sidebar-fixed .main,
+html:not([dir=rtl]) .sidebar-xl-show.sidebar-fixed .app-footer,
+html:not([dir=rtl]) .sidebar-show.sidebar-fixed .main,
+html:not([dir=rtl]) .sidebar-show.sidebar-fixed .app-footer {
+    margin-left: 300px;
+  }
+  html:not([dir=rtl]) .sidebar-xl-show.breadcrumb-fixed .breadcrumb,
+html:not([dir=rtl]) .sidebar-show.breadcrumb-fixed .breadcrumb {
+    left: 300px;
+  }
+  html[dir=rtl] .sidebar-xl-show.sidebar-fixed .main,
+html[dir=rtl] .sidebar-xl-show.sidebar-fixed .app-footer,
+html[dir=rtl] .sidebar-show.sidebar-fixed .main,
+html[dir=rtl] .sidebar-show.sidebar-fixed .app-footer {
+    margin-right: 300px;
+  }
+  html[dir=rtl] .sidebar-xl-show.breadcrumb-fixed .breadcrumb,
+html[dir=rtl] .sidebar-show.breadcrumb-fixed .breadcrumb {
+    right: 300px;
+  }
+}
+
+@media (min-width: 1300px) {
+  html:not([dir=rtl]) .sidebar-xl-show.sidebar-fixed .main,
+html:not([dir=rtl]) .sidebar-xl-show.sidebar-fixed .app-footer,
+html:not([dir=rtl]) .sidebar-show.sidebar-fixed .main,
+html:not([dir=rtl]) .sidebar-show.sidebar-fixed .app-footer {
+    margin-left: 300px;
+  }
+  html:not([dir=rtl]) .sidebar-xl-show.breadcrumb-fixed .breadcrumb,
+html:not([dir=rtl]) .sidebar-show.breadcrumb-fixed .breadcrumb {
+    left: 300px;
+  }
+  html[dir=rtl] .sidebar-xl-show.sidebar-fixed .main,
+html[dir=rtl] .sidebar-xl-show.sidebar-fixed .app-footer,
+html[dir=rtl] .sidebar-show.sidebar-fixed .main,
+html[dir=rtl] .sidebar-show.sidebar-fixed .app-footer {
+    margin-right: 300px;
+  }
+  html[dir=rtl] .sidebar-xl-show.breadcrumb-fixed .breadcrumb,
+html[dir=rtl] .sidebar-show.breadcrumb-fixed .breadcrumb {
+    right: 300px;
+  }
+}
+
+
+/* End core ui over rides */
+
+
+li.breadcrumb-item:nth-child(1) {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card {
+    border: none;
+}
+
+.viewHost {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#cloudConfig-editorCollapse {
+    height: 550px;
+}
+
+.sidebar .nav-dropdown.open > .nav-dropdown-items {
+    max-height: 200000px;
+}
+
+#deploymentList a {
+    color: white;
+}
+
+.actionCard {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#editor {
+    position: absolute;
+    width: 95%;
+    height: 500px;
+}
+
+.app-header .nav-item.active .nav-link {
+    color: #20a8d8;
+}
+
+.app-header .nav-item {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.app-header .nav-item .nav-link {
+    color: white;
+}
+
+.sidebar .nav-link {
+    outline: 0;
+}
+.sidebar .nav-link:hover {
+    color: #167495;
+    background-color: rgba(0,0,0,0);
+}
+
+.sidebar .nav-item.active {
+    background-color: #20a8d8;
+}
+
+.breadcrumb-item {
+    color: white;
+}
+
+.breadcrumb-item.active {
+    color: #20a8d8;
+}
+
+
+a:hover {
+  color: #167495;
+  color: #20a8d8;
+  text-decoration: underline;
+}
+
+.card-hover-primary:hover{
+    background-color: #20a8d8;
+    color: white;
+}
+
+.breadcrumb {
+    background-color: #3a4149;
+    border-bottom: none;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+a {
+    font-weight: 200;
+}
+
+.app-header .nav-item {
+    margin-right: 2px;
+}
+
+/* Adapated from https://bootsnipp.com/snippets/featured/multi-select-tiled-layout */
+#profileHostsBox{margin:20px 0 0 0}
+#profileHostsBox label.btn-default.active{background-color:#007ba7;color:#FFF}
+#profileHostsBox label.btn-default{width:90%;border:1px solid #efefef;margin:5px; box-shadow:5px 8px 8px 0 #ccc;}
+#profileHostsBox label .bizcontent{width:100%;}
+#profileHostsBox .btn-group{width:90%}
+#profileHostsBox .btn span.fa{
+    opacity: 0;
+}
+#profileHostsBox .btn.active span.fa {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
+}
+
+.navbar .navbar-brand:hover{
+    color: #20a8d8;
+}
+
+.fa-play, .fa-check {
+    color: green !important;
+}
+
+.fa-snowflake {
+    color: blue !important;
+}
+
+.fa-stop-circle, .fa-exclamation-triangle {
+    color: red !important;
+}
+
+.card-block {
+    padding: 20px;
+}
+
+.brand-card {
+    border: none;
+}
+
+.brand-card-header .host {
+    color: white;
+}
+
+.brand-card-body > div > .projectFormGroup {
+    margin-left: 10px;
+    margin-right: 10px;
+}

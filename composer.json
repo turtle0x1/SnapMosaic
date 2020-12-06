@@ -1,0 +1,23 @@
+{
+    "minimum-stability": "dev",
+    "name": "dhope0000/infrastructure",
+    "require": {
+        "php-http/guzzle6-adapter": "1.1",
+        "php-di/php-di": "6.0",
+        "vlucas/phpdotenv": "2.5",
+        "symfony/http-foundation": "4.2",
+        "symfony/cache": "4.3",
+        "doctrine/annotations": "1.10",
+        "symfony/routing": "5.1",
+        "robmorgan/phinx": "0.12.4",
+        "dhope0000/snap": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "dhope0000\\SnapMosaic\\": "src/classes"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9"
+    }
+}
