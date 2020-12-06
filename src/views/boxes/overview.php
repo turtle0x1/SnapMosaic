@@ -43,6 +43,8 @@ function loadOverview()
                 } else{
                     icon = snap.icon;
                 }
+            }else{
+                icon = `<img class="card-img-top snapImage pt-2 text-center" src='/assets/snapMosaic/images/no_image.png' alt="Card image">`
             }
             htmlCols[`col${x}`] += `<div class="card bg-dark">
                 ${icon}
